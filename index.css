@@ -37,7 +37,9 @@ li {
 /* =================HOME======================== */
 .home {
   background: url('./image/bg-1.png');
-  height: 657px;
+  background-size: cover;
+  padding: 20px 0;
+  /* height: 887px; */
 }
 
 .banner {
@@ -71,6 +73,15 @@ li {
   line-height: 1.6;
   color: var(--text-color);
   /* font-family: 'Be Vietnam', sans-serif; */
+}
+
+.logo {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .header {
@@ -138,10 +149,13 @@ li {
 }
 
 .info {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .info .info__title {
   font-size: 60px;
+  /* background: -webkit-linear-gradient(45deg, red, yellow, green, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
   color: var(--color--primary);
   font-weight: 700;
   box-sizing: border-box;
