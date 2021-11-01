@@ -33,6 +33,16 @@ h4 {
 li {
   list-style: none;
 }
+.title {
+  font-size: 36px;
+  color: var(--color--primary);
+  line-height: 1.6;
+}
+.subtitle {
+  font-size: 24px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
 
 /* =================HOME======================== */
 .home {
@@ -45,7 +55,7 @@ li {
 .banner {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  /* padding: 40px 0; */
   align-items: center;
 }
 
@@ -82,6 +92,11 @@ li {
   object-fit: cover;
   margin: 0 auto;
   text-align: center;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.2);
 }
 
 .header {
@@ -200,4 +215,54 @@ li {
 .home__product .home__product-count {
   color: var(--color-secondary);
   line-height: 1.6;
+}
+
+/* =================INTRODUCE================= */
+.introduce {
+  padding: 120px 0;
+}
+
+.introduce .introduce__top {
+  text-align: center;
+}
+
+.introduct__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.introduct__bottom .introduce__item {
+  width: 50%;
+  padding: 0px 60px 0px 0px;
+  box-sizing: border-box;
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 100px;
+}
+.introduct__bottom .introduce__item .introduce__logo {
+  margin-right: 20px;
+}
+.introduct__bottom .introduce__item .introduce__logo i {
+  font-size: 100px;
+  color: var(--color-secondary);
+}
+.introduct__bottom .introduce__item .introduce__logo div {
+  width: 100px;
+}
+
+.introduct__bottom .introduce__item .introduce__info {
+  display: flex;
+  flex-direction: column;
+}
+.introduct__bottom .introduce__item .introduce__info .introduce__info-name {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--color--primary);
+}
+.introduct__bottom .introduce__item .introduce__info .introduce__info-detail {
+  color: var(--text-color);
+  line-height: 1.6;
+  box-sizing: border-box;
 }
