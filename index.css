@@ -58,8 +58,9 @@ li {
   background: url('./image/bg-1.png');
   background-size: cover;
   padding: 20px 0 60px 0;
-  /* height: 887px; */
+  height: 100vh;
   position: relative;
+  box-sizing: border-box;
 }
 
 .banner {
