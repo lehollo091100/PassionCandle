@@ -7,6 +7,15 @@
   --color--primary: #364a15;
   --color-secondary: #876a1d;
 }
+* {
+  text-decoration: none;
+}
+a {
+  color: var(--green);
+}
+html {
+  scroll-behavior: smooth;
+}
 ul {
   list-style-type: disc;
   margin-block-start: 0em;
@@ -232,10 +241,11 @@ li {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 30px;
+  width: 100%;
 }
 .introduct__bottom .introduce__item {
   width: 50%;
-  padding: 0px 60px 0px 0px;
+  /* padding: 0px 60px 0px 0px; */
   box-sizing: border-box;
   display: flex;
   /* align-items: center; */
@@ -249,12 +259,13 @@ li {
   color: var(--color-secondary);
 }
 .introduct__bottom .introduce__item .introduce__logo div {
-  width: 100px;
+  width: 110px;
 }
 
 .introduct__bottom .introduce__item .introduce__info {
   display: flex;
   flex-direction: column;
+  padding: 0 60px 0 0;
 }
 .introduct__bottom .introduce__item .introduce__info .introduce__info-name {
   font-size: 24px;
@@ -265,4 +276,74 @@ li {
   color: var(--text-color);
   line-height: 1.6;
   box-sizing: border-box;
+}
+
+/* ================================PRODUCT============ */
+.product {
+  box-sizing: border-box;
+  padding: 120px 0;
+  border: 1px solid var(--grey2);
+}
+.product__top {
+  text-align: center;
+}
+.product__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.product__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 25%;
+}
+.product__item .product__wrapper {
+  border: 1px solid var(--text-color);
+  padding: 20px;
+  text-align: center;
+}
+.product__item .product__wrapper:hover {
+  border: 1px solid var(--color-secondary);
+}
+.product__item .product__item-image {
+  width: 100%;
+  height: 203px;
+  cursor: pointer;
+}
+.product__item .product__item-image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.product__item .product__item-name {
+  margin-top: 20px;
+  color: var(--color--primary);
+  line-height: 1.6;
+  font-size: 18px;
+}
+.product__item .product__item-prize {
+  color: var(--color-secondary);
+  font-size: 18px;
+  margin-top: 20px;
+}
+.product__item .product__item-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.product__item .product__item-button i {
+  width: 25%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color--primary);
+  cursor: pointer;
+  color: var(--text-color);
+}
+.product__item .product__item-button i:hover {
+  background: var(--grey1);
 }
