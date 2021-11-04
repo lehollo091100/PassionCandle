@@ -63,6 +63,19 @@ li {
   height: 100vh;
   position: relative;
   box-sizing: border-box;
+  z-index: 0;
+}
+.home__right {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 40%;
+  object-fit: cover;
+}
+.home .container {
+  /* z-index: ; */
 }
 
 .banner {
