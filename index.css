@@ -300,6 +300,48 @@ li {
   box-sizing: border-box;
 }
 
+/* ===========================PRESENT=================== */
+.present {
+  background-color: #8080803d;
+  box-sizing: border-box;
+  padding: 10px 0;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.present img {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  /* object-fit: cover; */
+  width: 40%;
+  right: 0;
+  z-index: 1;
+}
+
+.present h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.present .present__detail {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.present__button {
+  color: var(--color-secondary);
+  line-height: 1.6;
+  font-size: 20px;
+  cursor: pointer;
+}
+.present__button:hover i {
+  margin-left: 8px;
+}
+
 /* ================================PRODUCT============ */
 .product {
   box-sizing: border-box;
