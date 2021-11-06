@@ -57,13 +57,17 @@ li {
 
 /* =================HOME======================== */
 .home {
-  background: url('./image/bg-1.png');
+  background: url('./image/bg-1.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 20px 0 60px 0;
   height: 100vh;
   position: relative;
   box-sizing: border-box;
   z-index: 0;
+  width: 100vw;
 }
 .home__right {
   z-index: -1;
@@ -302,13 +306,17 @@ li {
 
 /* ===========================PRESENT=================== */
 .present {
-  background-color: #8080803d;
   box-sizing: border-box;
   padding: 10px 0;
   position: relative;
-  height: 400px;
+  min-height: 400px;
   display: flex;
   align-items: center;
+  background: url('./image/noel\ 400.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100vw auto;
 }
 .present img {
   position: absolute;
@@ -580,3 +588,5 @@ li {
     transform: scale(1);
   }
 }
+
+/* ==================RESPONSIVE=================== */
