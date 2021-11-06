@@ -312,12 +312,13 @@ li {
 }
 .present img {
   position: absolute;
+  /* border: 40px solid transparent; */
   bottom: 0;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   width: 40%;
   right: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 .present h1 {
