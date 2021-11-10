@@ -195,6 +195,41 @@ li {
   color: var(--green);
   background: white;
 }
+.header__right .bars__icon {
+  border: 1px solid var(--grey2);
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+}
+.header__right .bars__icon:hover {
+  color: var(--green);
+  background: white;
+}
+.header1 {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  background-color: white;
+  height: 100vh;
+  z-index: 100;
+  transition: all 0.4s linear;
+}
+.header1.active {
+  left: 0;
+}
+.header1 .header1__list-item {
+  color: var(--text-color);
+  display: block;
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
 
 .info {
   margin-top: 20px;
@@ -590,3 +625,202 @@ li {
 }
 
 /* ==================RESPONSIVE=================== */
+@media (max-width: 320px) {
+  /*=================== HOME ================*/
+  .home {
+    height: unset;
+    padding: 20px 0 100px 0;
+  }
+  .home__right {
+    height: unset;
+    width: 50%;
+  }
+  .banner__phone {
+    display: none;
+  }
+  .banner__news {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .home .header__list {
+    display: none;
+  }
+  .home .header__right {
+    margin-top: 20px;
+  }
+  .header__right .bars__icon {
+    display: unset;
+  }
+  .info .info__title {
+    font-size: 36px;
+  }
+  .info .info__detail {
+    font-size: 18px;
+    max-width: unset;
+    line-height: 1.6;
+  }
+
+  /*  */
+}
+
+@media (max-width: 768px) {
+  /*=================== HOME ================*/
+  .home {
+    height: unset;
+    padding: 20px 0 100px 0;
+  }
+  .home__right {
+    height: unset;
+    width: 50%;
+  }
+  .banner__phone {
+    display: none;
+  }
+  .banner__news {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .home .header__list {
+    display: none;
+  }
+  .home .header__right {
+    margin-top: 20px;
+  }
+  .header__right .bars__icon {
+    display: unset;
+  }
+  .info .info__title {
+    font-size: 36px;
+  }
+  .info .info__detail {
+    font-size: 18px;
+    max-width: unset;
+    line-height: 1.6;
+  }
+
+  /* INTRODUCE */
+  .introduce {
+    padding: 60px 0;
+  }
+  .introduct__bottom .introduce__item {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .introduct__bottom .introduce__item .introduce__logo {
+    width: 40%;
+  }
+  .introduct__bottom .introduce__item .introduce__info {
+    padding: unset;
+    width: 50%;
+  }
+  /* PRESENT */
+  .present {
+    background-color: rgb(244, 246, 247);
+  }
+  /* PRODUCT */
+  .product {
+    padding: 60px 0;
+  }
+  .product__item {
+    width: 100%;
+  }
+  /* BLOG */
+  .blog {
+    padding: 60px 0;
+  }
+  .blog .blog__list {
+    flex-wrap: wrap;
+  }
+  .blog__list .blog__list-item {
+    width: 100%;
+  }
+
+  /* footer */
+  .contact {
+    padding: 60px 0;
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact__left {
+    width: 100%;
+  }
+  .contact__right {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .title {
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  /*=================== HOME ================*/
+  .home {
+    height: unset;
+    padding: 20px 0 100px 0;
+  }
+  /* .banner__phone {
+    display: none;
+  } */
+  .banner__news {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  /* .home .header__list {
+    display: none;
+  }
+  .home .header__right {
+    margin-top: 20px;
+  } */
+  /* .header__right .bars__icon {
+    display: unset;
+  } */
+  .info .info__title {
+    font-size: 36px;
+  }
+  .info .info__detail {
+    font-size: 18px;
+    max-width: unset;
+    line-height: 1.6;
+  }
+
+  /* INTRODUCE */
+  .introduce {
+    padding: 60px 0;
+  }
+  /* .introduct__bottom .introduce__item .introduce__logo div {
+    width: 100%;
+  }
+  .introduct__bottom .introduce__item .introduce__logo i {
+    font-size: 120px;
+  } */
+  /* PRESENT */
+  .present {
+    background-color: rgb(244, 246, 247);
+  }
+  /* PRODUCT */
+  .product {
+    padding: 60px 0;
+  }
+  .product__item {
+    width: 50%;
+  }
+  /* BLOG */
+  .blog {
+    padding: 60px 0;
+  }
+  .contact {
+    padding: 60px 0;
+  }
+}

@@ -34,9 +34,6 @@
             </div>
             <img class="logo" src="./image/logo.png" alt="">
             <div class="header">
-                <!-- <div class="header__logo">
-                    <span>PASSION CANDLE</span>
-                </div> -->
                 <ul class="header__list">
                     <a href="#introduce" class="header__list-item">GIỚI THIỆU</a>
                     <a href="#product" class="header__list-item">SẢN PHẨM</a>
@@ -45,11 +42,26 @@
                     <a href="#contact" class="header__list-item">LIÊN HỆ</a>
                 </ul>
                 <div class="header__right">
+                    <i class="fas fa-bars bars__icon"></i>
                     <span>
                         <i class="fas fa-shopping-bag"></i>
                         0đ/ 0 items
                     </span>
                     <i class="far fa-heart love__icon"></i>
+                </div>
+            
+            </div>
+            <div class="header1">
+                <div class="header1__list">
+                    <a class="header1__list-item">
+                        <span>Close</span>
+                        <i class="fas fa-times close__icon"></i>
+                    </a>
+                    <a href="#introduce" class="header1__list-item">GIỚI THIỆU</a>
+                    <a href="#present" class="header1__list-item">KHUYẾN MÃI</a>
+                    <a href="#product" class="header1__list-item">SẢN PHẨM</a>
+                    <a href="#blog" class="header1__list-item">BLOG</a>
+                    <a href="#contact" class="header1__list-item">LIÊN HỆ</a>
                 </div>
             </div>
             <div class="info">
@@ -159,7 +171,7 @@
             </span>
         </div>
     </div>
-    <div class="product" id="product">
+    <div class="product" id="product"> 
         <div class="container">
             <div class="product__top">
                 <div class="product__title title">
@@ -267,7 +279,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <div class="blog" id="blog">
         <div class="container">
             <div class="title">Blog Mùi Hương</div>
@@ -368,7 +380,6 @@
     $(document).ready(function(){
     // Add smooth scrolling to all links
         $("a").on('click', function(event) {
-
         // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                 // Prevent default anchor click behavior
@@ -387,6 +398,12 @@
                 });
                 } // End if
         });
+        $(".bars__icon").on('click',function(event){
+            $(".header1").addClass("active")
+        });
+        $(".close__icon").on('click',function(){
+            $(".header1").removeClass("active");
+        })
     });
     </script>
 </body>
